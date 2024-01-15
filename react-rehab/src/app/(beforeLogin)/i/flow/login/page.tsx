@@ -1,5 +1,7 @@
-import React from 'react'
+import LoginModal from "@/app/(beforeLogin)/_component/LgoinModal";
 
-export default function Lgoin() {
-  <h1>로그인페이지</h1>
+export default function Page() {
+  return (
+    <LoginModal />
+  );
 }
