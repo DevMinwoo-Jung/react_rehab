@@ -1,7 +1,7 @@
-import React from 'react'
-
-export default function page() {
+export default function Home() {
   return (
-    <div>page</div>
+    <main>
+      홈페이지
+    </main>
   )
 }

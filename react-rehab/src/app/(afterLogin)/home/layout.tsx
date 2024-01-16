@@ -1,13 +1,10 @@
-import './globals.css'
+import {ReactNode} from "react";
 
-export default function HomeLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default async function HomeLayout({children}: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+    <div>
+      홈 레이아웃
+      {children}
+    </div>
+  );
 }

@@ -1,20 +1,15 @@
-import { LayoutProps } from '@/app/utils/type/type'
-import styles from '@/app/page.module.css'
+import {ReactNode} from "react";
+import styles from '@/app/(beforeLogin)/_component/main.module.css';
 
-export default function HomeLayout({
-  children,
-  modal,
-}: LayoutProps) {
+type Props = { children: ReactNode, modal: ReactNode };
+export default function Layout({ children, modal }: Props) {
   return (
-    <html lang="en">
-      <body className={styles.container}>
-        {children}
-        {modal}  
-        {/* 페럴렐 라우트는 modal로, 일반 라우트는 children */}
-      </body>
-    </html>
+    <div className={styles.container}>
+      {children}
+      {modal}
+    </div>
   )
 }
 
-// 주소가 localhost:3000일 때는 children->page.tsx, modal->@modal/default.tsx
-// 주소가 localhost:3000/i/flow/login 때는 chldren->i/flow/login/page.tsx, modal->@modal/i/flow/login/page.tsx
+// 주소가 localhost:3001일 때는 children->page.tsx, modal->@modal/default.tsx
+// 주소가 localhost:3001/i/flow/login 때는 chldren->i/flow/login/page.tsx, modal->@modal/i/flow/login/page.tsx

@@ -1,7 +1,7 @@
-import React from 'react'
-
-export default function page() {
+export default function Page() {
   return (
-    <div>page</div>
+    <main>
+      검색
+    </main>
   )
 }
