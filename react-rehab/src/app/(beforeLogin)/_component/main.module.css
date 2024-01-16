@@ -65,3 +65,7 @@
 .login:hover {
     background-color: rgba(29,155,240,0.1);
 }
+
+.font {
+    color: black;
+}
